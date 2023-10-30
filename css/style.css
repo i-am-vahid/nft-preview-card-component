@@ -35,6 +35,11 @@ main {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 377px) {
+  main {
+    padding: 0 1rem;
+  }
+}
 
 .container {
   background-color: var(--Very-dark-blue-card-BG);
@@ -42,6 +47,7 @@ main {
   padding: 20px;
   width: 350px;
 }
+
 .container__pic {
   border-radius: 8px;
   overflow: hidden;
@@ -74,6 +80,7 @@ main {
 .container__pic:hover .view {
   opacity: 1;
 }
+
 .container__info {
   padding-top: 20px;
 }
@@ -88,12 +95,19 @@ main {
 .container__info--titel:hover {
   color: var(--Cyan);
 }
+
 .container__price {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px auto;
   position: relative;
+}
+@media (max-width: 300px) {
+  .container__price {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .container__price--price p {
   color: var(--Cyan);
@@ -103,11 +117,19 @@ main {
   align-items: center;
   gap: 10px;
 }
+
 .container__person {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   padding-top: 20px;
+}
+@media (max-width: 300px) {
+  .container__person {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 .container__person img {
   width: 30px;

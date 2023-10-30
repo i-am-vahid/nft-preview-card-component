@@ -1,0 +1,26 @@
+.container{
+    &__price{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px auto;
+        position: relative;
+    @media (max-width:300px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    &--price{
+        p{
+            color: var(--Cyan);
+
+        }
+        }
+    &--time,&--price{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    }
+}

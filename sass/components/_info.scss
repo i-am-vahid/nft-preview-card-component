@@ -1,0 +1,17 @@
+.container{
+    &__info{
+        padding-top: 20px  ;
+        &--titel {            
+            display: inline-block;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 25px;
+            transition: 0.5s;
+            color: var(--White);
+            &:hover{
+                color: var(--Cyan);
+            }
+        }
+        
+    }
+}

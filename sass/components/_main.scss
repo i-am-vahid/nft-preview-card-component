@@ -1,0 +1,11 @@
+main{
+    height: 100vh;
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width:377px) {
+        padding: 0 1rem;
+    }
+    
+}
